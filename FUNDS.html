@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDS</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['TRADING', 'Hours per Day'],
+          ['TOTAL CAPITAL USED',     87],
+          ['AVAIABLE CAPITAL ',      10],
+          ['BACKUP CAPITAL',      3],
+          
+
+          
+        ]);
+
+        var options = {
+          title: 'TOTAL FUNDS',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+    <p><b>
+   <li>
+          TOTAL VALUE :  4268500/-
+    </li></P>
+
+  <P>  <li>
+        AVAIABLE VALUE : 139980 /-
+    </li></P>
+ <p><li>
+         INVESTED VALUE : 41,28520 /-
+    </li>
+
+    </P>
+   <P>
+
+    <li>
+         CURRENT VALUE : 4747798/-
+    </li></p>
+    </b></p>
+  
+</body>
+</html>
